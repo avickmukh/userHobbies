@@ -1,0 +1,40 @@
+@import '../../styles/main';
+
+.container {
+  flex: 1 1;
+  margin-right: 1rem;
+
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  font-size: $default-font-size;
+  
+  &empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20rem;
+    padding: 1rem;
+  }
+}
+
+.inputContainer {
+  padding: 1rem;
+  @include solidBorder(1px, $black);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 10rem;
+  grid-column-gap: 5rem;
+  &Field{
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    @include solidBorder(1px, $black);
+  }
+}
+.addHobbybutton{
+  background-color: $blue; /* Blue */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 15px;
+}
